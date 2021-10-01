@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 839px;
+    background-image: linear-gradient(45deg, rgb(174, 0, 255), rgb(57, 2, 255));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.863);
+    color: white;
+    text-align: center;
+    width: 1250px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.header {
+    text-align: center;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+button {
+    background-image: linear-gradient(45deg, rgb(174, 0, 255), rgb(57, 2, 255));
+    border: none;
+    padding: 15px;
+    width: 225px;
+    border-radius: 10px;
+    color: white;
+}
