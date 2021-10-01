@@ -3,10 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    height: 839px;
-    background-image: linear-gradient(45deg, rgb(174, 0, 255), rgb(57, 2, 255));
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.fundo {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(45deg, rgb(174, 0, 255), rgb(57, 2, 255));
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -15,10 +25,11 @@ body {
     text-align: center;
     width: 1250px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 50px;
-    padding-top: 85px;
-    padding-bottom: 85px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .header {

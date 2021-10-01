@@ -4,37 +4,202 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <title>Controle de Equipamento</title>
 </head>
 <body>
+    <div class="fundo"></div>
     <div class="container">
         <div class="header">
             <h1>Controle de Equipamento</h1>
         </div>
         <br><br>
         <div class="content">
-            Entrada <br><br>
-            Barril <br><br>
-            <input type="text" placeholder="10L"> <input type="text" placeholder="15L"> <input type="text" placeholder="20L"> <input type="text" placeholder="30L"> <input type="text" placeholder="50L">
-            <br><br>
-            Cilindro <br><br>
-            <input type="text" placeholder="2,5 KG"> <input type="text" placeholder="3KG"> <input type="text" placeholder="4KG"> <input type="text" placeholder="8KG"> <input type="text" placeholder="10KG">
-            <br><br>
-            Chopeira <br><br>
-            <input type="text" placeholder="10L"> <input type="text" placeholder="15L"> <input type="text" placeholder="20L"> <input type="text" placeholder="30L"> <input type="text" placeholder="50L"> <br><br>
-            Saida <br><br>
-            Barril <br><br>
-            <input type="text" placeholder="10L"> <input type="text" placeholder="15L"> <input type="text" placeholder="20L"> <input type="text" placeholder="30L"> <input type="text" placeholder="50L">
-            <br><br>
-            Cilindro <br><br>
-            <input type="text" placeholder="2,5 KG"> <input type="text" placeholder="3KG"> <input type="text" placeholder="4KG"> <input type="text" placeholder="8KG"> <input type="text" placeholder="10KG">
-            <br><br>
-            Chopeira <br><br>
-            <input type="text" placeholder="10L"> <input type="text" placeholder="15L"> <input type="text" placeholder="20L"> <input type="text" placeholder="30L"> <input type="text" placeholder="50L">
+            <h2 style="color: #2ecc71;">Entrada</h2> 
+            <br>
+            <br>
+            <h3>Barril</h3>
+            <br>
+
+            <input type="number" class="e-barril" id="e-barril-1" placeholder="10L">
+            <input type="number" class="e-barril" id="e-barril-2" placeholder="15L">
+            <input type="number" class="e-barril" id="e-barril-3" placeholder="20L">
+            <input type="number" class="e-barril" id="e-barril-4" placeholder="30L">
+            <input type="number" class="e-barril" id="e-barril-5" placeholder="50L">
+
+            <br>
+            <br>
+
+            <h3>Cilindro</h3>
+            <br>
+
+            <input type="number" class="e-cilindro" id="e-cilindro-1" placeholder="2,5 KG">
+            <input type="number" class="e-cilindro" id="e-cilindro-2" placeholder="3KG">
+            <input type="number" class="e-cilindro" id="e-cilindro-3" placeholder="4KG">
+            <input type="number" class="e-cilindro" id="e-cilindro-4" placeholder="8KG">
+            <input type="number" class="e-cilindro" id="e-cilindro-5" placeholder="10KG">
+
+            <br>
+            <br>
+
+            <h3>Chopeira</h3>
+            <br>
+
+            <input type="number" class="e-chopeira" id="e-chopeira-1" placeholder="10L">
+            <input type="number" class="e-chopeira" id="e-chopeira-2" placeholder="15L">
+            <input type="number" class="e-chopeira" id="e-chopeira-3" placeholder="20L">
+            <input type="number" class="e-chopeira" id="e-chopeira-4" placeholder="30L">
+            <input type="number" class="e-chopeira" id="e-chopeira-5" placeholder="50L">
+            
+            <br>
+            <br>
+            
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="color: #e74c3c;">Saida</h2>
+            <br>
+            <br>
+            
+            <h3>Barril</h3>
+            <br>
+            
+            <input type="number" class="s-barril" id="s-barril-1" placeholder="10L">
+            <input type="number" class="s-barril" id="s-barril-2" placeholder="15L">
+            <input type="number" class="s-barril" id="s-barril-3" placeholder="20L">
+            <input type="number" class="s-barril" id="s-barril-4" placeholder="30L">
+            <input type="number" class="s-barril" id="s-barril-5" placeholder="50L">
+
+            <br>
+            <br>
+            <h3>Cilindro</h3>
+            
+            <br>
+
+            <input type="number" class="s-cilindro" id="s-cilindro-1" placeholder="2,5 KG">
+            <input type="number" class="s-cilindro" id="s-cilindro-2" placeholder="3KG">
+            <input type="number" class="s-cilindro" id="s-cilindro-3" placeholder="4KG">
+            <input type="number" class="s-cilindro" id="s-cilindro-4" placeholder="8KG">
+            <input type="number" class="s-cilindro" id="s-cilindro-5" placeholder="10KG">
+
+            <br>
+            <br>
+
+            <h3>Chopeira</h3>
+            <br>
+            
+            <input type="number" class="s-chopeira" id="s-chopeira-1" placeholder="10L">
+            <input type="number" class="s-chopeira" id="s-chopeira-2" placeholder="15L">
+            <input type="number" class="s-chopeira" id="s-chopeira-3" placeholder="20L">
+            <input type="number" class="s-chopeira" id="s-chopeira-4" placeholder="30L">
+            <input type="number" class="s-chopeira" id="s-chopeira-5" placeholder="50L">
         </div>
-        <br><br>
-        <button>Enviar</button>
+        <br>
+        <br>
+        <!-- <button onclick="voltar();" style="cursor: pointer;">Voltar</button>
+        <span>&nbsp;</span> -->
+        <button onclick="nextPage();" style="cursor: pointer;" id="btn-somar">Somar</button>
+        <span>&nbsp;</span>
+        <button onclick="stop();" style="cursor: pointer;">Finalizar</button>
+        <br>
+        <br>
+        <h2 style="color: #3498db;" id="contador">Contador: 0</h2>
     </div>
 </body>
+
+<script>
+    var i = 0;
+    var entrada = [];
+    var saida = [];
+    entrada['barril'] = [0, 0, 0, 0, 0]; entrada['cilindro'] = [0, 0, 0, 0, 0]; entrada['chopeira'] = [0, 0, 0, 0, 0];
+    saida['barril'] = [0, 0, 0, 0, 0]; saida['cilindro'] = [0, 0, 0, 0, 0]; saida['chopeira'] = [0, 0, 0, 0, 0];
+
+    function nextPage() {
+        var errorCount = 0;
+
+        // Check empty fields
+        $('input').each(function() {
+            if (this.value == "") {
+                errorCount++;
+            }
+        });
+
+        if (errorCount > 0) {
+            alert("Preencha todos os campos!");
+            return;
+        }
+
+        // Entrada
+        $('.e-barril').each(function(index) {
+            entrada['barril'][index] += parseInt(this.value);
+        });
+
+        $('.e-cilindro').each(function(index) {
+            entrada['cilindro'][index] += parseInt(this.value);
+        });
+
+        $('.e-chopeira').each(function(index) {
+            entrada['chopeira'][index] += parseInt(this.value);
+        });
+
+        // Saida
+        $('.s-barril').each(function(index) {
+            saida['barril'][index] += parseInt(this.value);
+        });
+
+        $('.s-cilindro').each(function(index) {
+            saida['cilindro'][index] += parseInt(this.value);
+        });
+
+        $('.s-chopeira').each(function(index) {
+            saida['chopeira'][index] += parseInt(this.value);
+        });
+
+        $('input').each(function() {
+            this.value = "";
+        });
+        
+        i++;
+        $('#contador').html("Contador: " + i);
+
+        console.log(entrada);
+        console.log(saida);
+    }
+
+    function stop() {
+        var j = 1;
+
+        for(const [key, value] of Object.entries(entrada)) {
+            j = 1;
+            for(const [key2, value2] of Object.entries(entrada[key])) {
+                console.log(value2);
+                $('#e-' + key + '-' + j).val(value2);
+                j++;
+            }
+        }
+
+        for(const [key, value] of Object.entries(saida)) {
+            j = 1;
+            for(const [key2, value2] of Object.entries(saida[key])) {
+                console.log(value2);
+                $('#s-' + key + '-' + j).val(value2);
+                j++;
+            }
+        }
+
+        $('#btn-somar').prop('disabled', true);
+    }
+
+    // function voltar() {
+    //     $('input').each(function() {
+    //         this.value = "";
+    //     });
+    //     i--;
+    //     $('#contador').html("Contador: " + i);
+    // }
+
+</script>
+
 </html>
