@@ -27,7 +27,7 @@ body {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    border-radius: 50px;
+    border-radius: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -50,4 +50,9 @@ button {
     width: 225px;
     border-radius: 10px;
     color: white;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
 }
